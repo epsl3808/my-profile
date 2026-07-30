@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>호떡 | 프로필</title>
+<style>
+  :root {
+    --accent: #ff8a3d;
+    --bg: #fdf6ee;
+    --card: #ffffff;
+    --text: #2b2420;
+    --muted: #8a7d70;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 40px 16px;
+  }
+
+  .card {
+    background: var(--card);
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(43, 36, 32, 0.12);
+    overflow: hidden;
+  }
+
+  .card-header {
+    background: linear-gradient(135deg, var(--accent) 0%, #ffb673 100%);
+    padding: 40px 32px;
+    text-align: center;
+    position: relative;
+  }
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  }
+  .card-header h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  .card-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+    margin-top: 6px;
+  }
+
+  .card-body {
+    padding: 28px 32px 36px;
+  }
+
+  .info-list {
+    background: var(--card);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(43, 36, 32, 0.08);
+    overflow: hidden;
+  }
+  .info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 20px;
+    border-bottom: 1px solid #f1e9df;
+  }
+  .info-item:last-child { border-bottom: none; }
+  .info-icon {
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .info-text .label {
+    font-size: 0.78rem;
+    color: var(--muted);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+  }
+  .info-text .value {
+    font-size: 1.02rem;
+    font-weight: 600;
+  }
+
+  .contact-btn {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    padding: 14px;
+    border-radius: 12px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: opacity 0.2s ease;
+  }
+  .contact-btn:hover { opacity: 0.9; }
+
+  footer {
+    text-align: center;
+    margin-top: 28px;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="avatar">🧑</div>
+      <h1>호떡</h1>
+      <p>직장인</p>
+    </div>
+
+    <div class="card-body">
+      <div class="info-list">
+        <div class="info-item">
+          <div class="info-icon">💪</div>
+          <div class="info-text">
+            <div class="label">잘하는 것</div>
+            <div class="value">정리정돈</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">🔥</div>
+          <div class="info-text">
+            <div class="label">요즘 관심사</div>
+            <div class="value">운동</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📷</div>
+          <div class="info-text">
+            <div class="label">인스타그램</div>
+            <div class="value">@js2rrr</div>
+          </div>
+        </div>
+      </div>
+
+      <a class="contact-btn" href="https://www.instagram.com/js2rrr" target="_blank" rel="noopener noreferrer">
+        인스타그램에서 만나기
+      </a>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 호떡의 프로필 페이지</footer>
+
+</body>
+</html>
